@@ -1,0 +1,150 @@
+/* 1. De Header: Alles in het midden van het rode vlak */
+header {
+    background-color: #ffe600;
+    width: 50%;
+    height: 125px;
+    color: rgb(0, 0, 0);
+    
+    display: flex;
+    flex-direction: column;   /* Zet H1 en UL onder elkaar */
+    justify-content: center;  /* Verticaal centreren */
+    align-items: center;      /* Horizontaal centreren */
+    margin: auto;
+    padding: 5px;
+}
+
+header h1 {
+    margin: 0;                /* Verwijder de onzichtbare marge van de browser */
+    padding: 0;
+}
+
+header ul {
+    display: flex;            /* Zet de linkjes naast elkaar */
+    gap: 15px;                /* Ruimte tussen de knoppen */
+    list-style: none;         /* Geen bullets */
+    margin: 10px 0 0 0;       /* Alleen een beetje ruimte boven de knoppen */
+    padding: 0;               /* ZEER BELANGRIJK: verwijdert de automatische linker-marge */
+}
+
+/* 2. De Inputs: Alles in het midden van de pagina */
+input, 
+input[type="email"], 
+textarea, 
+button {
+    display: block;           /* Nodig om margin auto te laten werken */
+    margin: auto;        /* De 'auto' zet het veld precies in het midden */
+    width: 400px;             /* Je vaste breedte */
+    max-width: 90%;           /* Zorgt dat het op mobiel ook past */
+    box-sizing: border-box;
+}
+
+
+.profile-container {
+    background-color:  #ffe600;
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column; /* Zet img en p onder elkaar */
+    align-items: center;    /* Centreert ze horizontaal */
+    text-align: center;     /* Centreert de regels tekst zelf */
+    margin-top: 20px;
+    padding: 5px;       /* Geeft wat ruimte vanaf de header */
+}
+
+.profile-container img {
+    border-radius: 50%;     /* Optioneel: maakt de foto rond */
+    margin: auto;    /* Ruimte tussen de foto en de tekst */
+    object-fit: cover;
+    padding: 5px;      /* Voorkomt dat de foto vervormt */
+}
+
+
+footer{
+    background-color: #ffe600;
+    width: 50%;
+    margin: auto;
+    margin-top: 20px;
+    height: auto;
+    padding: 5px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+    }
+
+
+body{
+    background-color: #000000;
+    font-family: Verdana, sans-serif; font-size: 18px; color: WHITE;}
+    input[type="text"], input[type="email"], textarea, select, button{
+    margin: 0px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+    }
+
+ul a{
+    color: white;
+    text-decoration: none;
+    width: auto;
+    }
+
+li{
+    display: inline-block;
+    height: 22px;
+    width: auto;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    }
+
+li:hover{
+    background-color: #ff00e6;
+    border-style: none;
+    }
+
+h1{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    }
+
+p{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-decoration: none;
+    }
+
+table,TR,TD{
+    color: rgb(0, 0, 0);
+    background-color: #f7ed96;
+    font-size: 24px;
+    text-align: left;
+    }
+
+textarea{
+    height: 100px;
+    padding: 5px 4px;
+    }
+
+button:active{
+    background-color: darkgreen;
+    color: white;
+    border-radius: 4px; box-shadow: inset 2px 2px 5px red;
+    }
+
+.form{
+    width: 50%;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    }
+
+
+   
+
+    
